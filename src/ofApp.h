@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-
+#include "PcapCapture.hpp"
 class ofApp : public ofBaseApp{
 
 	public:
@@ -22,4 +22,5 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     bool grid[32][32];
     int width;
+    MyThread pcapThread;
 };
